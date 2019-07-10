@@ -1,0 +1,5 @@
+// MARK: - Employee
+
+"EMPLOYEES_WITHOUT_MANAGER.TITLE" = "Employees Without a Manager";
+"MANAGERS_WITHOUT_EMPLOYEE_ID.TITLE" = "Managers Without Employee Id";
+"MANAGERS_WITH_EMPLOYEE_ID.TITLE" = "Managers With Employee Id";

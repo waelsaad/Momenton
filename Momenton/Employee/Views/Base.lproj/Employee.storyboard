@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4z4-bM-4Go">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Employee Controller-->
+        <scene sceneID="6sQ-UA-Lul">
+            <objects>
+                <tableViewController storyboardIdentifier="ViewController" id="4z4-bM-4Go" customClass="EmployeeController" customModule="Momenton" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="table" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fuv-dQ-Z6V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="DaC-q6-oen">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Momenton" translatesAutoresizingMaskIntoConstraints="NO" id="UG1-Nz-yBM">
+                                    <rect key="frame" x="107" y="38" width="200" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="gSq-IM-16m"/>
+                                        <constraint firstAttribute="height" constant="100" id="lsT-C6-aXc"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Data Representation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ord-SK-x5j" userLabel="Employee Data Representation">
+                                    <rect key="frame" x="89.5" y="157" width="235" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Ord-SK-x5j" firstAttribute="centerX" secondItem="DaC-q6-oen" secondAttribute="centerX" id="0J1-FR-cah"/>
+                                <constraint firstItem="UG1-Nz-yBM" firstAttribute="centerX" secondItem="DaC-q6-oen" secondAttribute="centerX" id="EnG-U1-pML"/>
+                                <constraint firstItem="Ord-SK-x5j" firstAttribute="top" secondItem="UG1-Nz-yBM" secondAttribute="bottom" constant="19" id="RRl-Xg-SHg"/>
+                                <constraint firstItem="UG1-Nz-yBM" firstAttribute="centerX" secondItem="DaC-q6-oen" secondAttribute="centerX" id="dOb-Xq-Ilh"/>
+                                <constraint firstItem="UG1-Nz-yBM" firstAttribute="top" secondItem="DaC-q6-oen" secondAttribute="top" constant="38" id="zJw-qx-U4w"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ParentCell" id="es3-rc-NdO">
+                                <rect key="frame" x="0.0" y="222" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="es3-rc-NdO" id="XRL-FY-5sM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChildCell" id="sbM-y7-5u0">
+                                <rect key="frame" x="0.0" y="266" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sbM-y7-5u0" id="OMQ-No-e4P">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.74509803919999995" green="0.83137254900000002" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.83137254900000002" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4z4-bM-4Go" id="80f-UV-sxs"/>
+                            <outlet property="delegate" destination="4z4-bM-4Go" id="3Pp-lb-6KU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wc3-sL-42k">
+                        <barButtonItem key="rightBarButtonItem" title="CAM" id="i4V-vH-jSq">
+                            <connections>
+                                <action selector="didTapCameraButton:" destination="4z4-bM-4Go" id="vbt-HW-txp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="view" destination="fuv-dQ-Z6V" id="9xu-yy-CLy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKL-xO-5Ip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197.59999999999999" y="805.54722638680664"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Momenton" width="1024" height="538"/>
+    </resources>
+</document>

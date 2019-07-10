@@ -1,0 +1,32 @@
+[
+    {
+        "Employee Name":"Alan",
+        "Id":100,
+        "Manager Id":150
+    },
+    {
+        "Employee Name":"Martin",
+        "Id":220,
+        "Manager Id":100
+    },
+    {
+        "Employee Name":"Jamie",
+        "Id":150,
+        "Manager Id":0
+    },
+    {
+        "Employee Name":"Alex",
+        "Id":275,
+        "Manager Id":100
+    },
+    {
+        "Employee Name":"Steve",
+        "Id":400,
+        "Manager Id":150
+    },
+    {
+        "Employee Name":"David",
+        "Id":190,
+        "Manager Id":400
+    }
+]
